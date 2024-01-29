@@ -5,20 +5,11 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello and welcome!");
-        String[] pw = new String[]{
-                "A", "s", "x", "d", "8", "g", "W", "g", "w"};
-        System.out.println(checkLengthOfPassword(pw));
-        System.out.println((isDigitInPassword(pw)));
-        System.out.println(isUppercaseAndLowercaseInPassword(pw));
     }
-
-
     public static boolean checkLengthOfPassword(String pw) {
         return pw.length() > 7;
 
     }
-
     public static boolean isDigitInPassword(String pw) {
         boolean digitInPassword = false;
         char[] chars = pw.toCharArray();
