@@ -29,6 +29,7 @@ public class Main {
     char[] chars = pw.toCharArray();
         boolean containsUppercase = false;
         boolean containsLowercase = false;
+        boolean containsUppercaseAndLowercase = false;
         for (char c : chars) {
             if (Character.isUpperCase(c)) {
                 containsUppercase = true;
@@ -36,10 +37,10 @@ public class Main {
             if (Character.isLowerCase(c)) {
                 containsLowercase = true;
             }
-
-            return containsLowercase && containsUppercase;
-
+            if (containsLowercase && containsUppercase){
+                containsUppercaseAndLowercase = true;
+            };
         }
-        return false;
+        return containsUppercaseAndLowercase;
     }
 }

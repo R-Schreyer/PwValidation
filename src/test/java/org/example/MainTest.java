@@ -48,5 +48,35 @@ public class MainTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void isUppercaseAndLowercaseInPassword_WhenContainsUppercaseAndLowercase_ThenTrue(){
+        //GIVEN
+        boolean expected = true;
+        //WHEN
+        boolean actual = Main.isUppercaseAndLowercaseInPassword("EmilPeter241");
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void isUppercaseAndLowercaseInPassword_WhenContainsNoUppercase_ThenFalse(){
+        //GIVEN
+        boolean expected = false;
+        //WHEN
+        boolean actual = Main.isUppercaseAndLowercaseInPassword("emilpeter241");
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void isUppercaseAndLowercaseInPassword_WhenContainsNoLowercase_ThenFalse(){
+        //GIVEN
+        boolean expected = false;
+        //WHEN
+        boolean actual = Main.isUppercaseAndLowercaseInPassword("EMILPETER241");
+        //THEN
+        assertEquals(expected, actual);
+    }
+
 
 }
