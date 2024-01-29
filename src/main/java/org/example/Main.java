@@ -39,7 +39,7 @@ public class Main {
             }
             if (containsLowercase && containsUppercase){
                 containsUppercaseAndLowercase = true;
-            };
+            }
         }
         return containsUppercaseAndLowercase;
     }
